@@ -70,10 +70,9 @@ else:
                 out='street music'
             st.success('the given audio sample is predicted as:- '+str(out))
 html_temp1 = """ 
-  <div style="background-color:pink ;padding:10px">
-  <h2 style="color:white;text-align:center;">DEVELOPED BY V.A.SAIRAM,</h2>
+  <div style="background-color:cyan ;padding:10px">
+  <h2 style="color:white;text-align:center;">DEVELOPED BY V.A.SAIRAM    email= sairamadithya2002@gmail.com     linkedin= https://www.linkedin.com/in/sairamadithya/ </h2>
   </div>
   """
 st.markdown(html_temp1,unsafe_allow_html=True)
-st.write('email= sairamadithya2002@gmail.com')
-st.write('linkedin= https://www.linkedin.com/in/sairamadithya/')
+
