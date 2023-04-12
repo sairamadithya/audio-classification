@@ -69,5 +69,11 @@ else:
             else:
                 out='street music'
             st.success('the given audio sample is predicted as:- '+str(out))
-st.write('Developed by:-')
-st.write('V.A.Sairam')
+html_temp1 = """ 
+  <div style="background-color:pink ;padding:10px">
+  <h2 style="color:white;text-align:center;">DEVELOPED BY V.A.SAIRAM,</h2>
+  </div>
+  """
+st.markdown(html_temp1,unsafe_allow_html=True)
+st.write('email= sairamadithya2002@gmail.com')
+st.write('linkedin= https://www.linkedin.com/in/sairamadithya/')
