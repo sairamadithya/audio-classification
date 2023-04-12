@@ -20,7 +20,7 @@ with st.spinner('Model is being loaded..'):
         model=load_model()
 html_temp = """ 
   <div style="background-color:pink ;padding:10px">
-  <h2 style="color:white;text-align:center;">DEEP LEARNING BASED AUDIO CLASSIFICATIONx/</h2>
+  <h2 style="color:white;text-align:center;">DEEP LEARNING BASED AUDIO CLASSIFICATION</h2>
   </div>
   """
 st.markdown(html_temp,unsafe_allow_html=True)
