@@ -14,7 +14,7 @@ from tensorflow import keras
 from audio_recorder_streamlit import audio_recorder
 import soundfile as sf
 def load_model():
-        model=tf.keras.models.load_model(r"C:\Users\sairam\Downloads\urbansound8k-2.9.h5")
+        model=tf.keras.models.load_model(r"urbansound8k-2.9.h5")
         return model
 with st.spinner('Model is being loaded..'):
         model=load_model()
