@@ -18,7 +18,12 @@ def load_model():
         return model
 with st.spinner('Model is being loaded..'):
         model=load_model()
-st.title('Audio classification project')
+html_temp = """ 
+  <div style="background-color:pink ;padding:10px">
+  <h2 style="color:white;text-align:center;">DEEP LEARNING BASED AUDIO CLASSIFICATIONx/</h2>
+  </div>
+  """
+st.markdown(html_temp,unsafe_allow_html=True)
 st.subheader('this website can classify audio samples into 10 different categories:-')
 st.write('1.air conditioner')
 st.write('2. car horn')
@@ -65,9 +70,4 @@ else:
                 out='street music'
             st.success('the given audio sample is predicted as:- '+str(out))
 
-
-# In[84]:
-
-
-get_ipython().system('streamlit run streamlit_app.py')
 
