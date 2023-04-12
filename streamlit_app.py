@@ -19,7 +19,7 @@ def load_model():
 with st.spinner('Model is being loaded..'):
         model=load_model()
 st.title('Audio classification project')
-st.write('this website can classify audio samples into 10 different categories:-')
+st.subheader('this website can classify audio samples into 10 different categories:-')
 st.write('1.air conditioner')
 st.write('2. car horn')
 st.write('3. children playing')
@@ -34,7 +34,7 @@ st.write('Please record or upload the audio sample')
 file=st.file_uploader("Choose a file",type=[".wav",".mp3"])
 if file is None:
         st.warning('Please upload a valid file!!')
- else:
+else:
         st.audio(file,format="audio/wav")
         audio, sample_rate = librosa.load(file) 
         mfccs_features = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=128)
