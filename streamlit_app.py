@@ -32,9 +32,9 @@ st.write('9. siren')
 st.write('10. street music')
 st.write('Please record or upload the audio sample')
 file=st.file_uploader("Choose a file",type=[".wav",".mp3"])
-    if file is None:
+if file is None:
         st.warning('Please upload a valid file!!')
-    else:
+ else:
         st.audio(file,format="audio/wav")
         audio, sample_rate = librosa.load(file) 
         mfccs_features = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=128)
@@ -69,5 +69,5 @@ file=st.file_uploader("Choose a file",type=[".wav",".mp3"])
 # In[84]:
 
 
-get_ipython().system('streamlit run audio_test.py')
+get_ipython().system('streamlit run streamlit_app.py')
 
