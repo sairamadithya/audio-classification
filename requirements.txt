@@ -4,3 +4,5 @@ keras
 numpy
 pandas
 librosa
+matplotlib
+audio_recorder_streamlit
