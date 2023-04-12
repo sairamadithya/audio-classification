@@ -69,6 +69,8 @@ else:
             else:
                 out='street music'
             st.success('the given audio sample is predicted as:- '+str(out))
-st.write('DEVELOPED BY V.A.SAIRAM \n email= sairamadithya2002@gmail.com \n linkedin= https://www.linkedin.com/in/sairamadithya/')
+st.write('DEVELOPED BY V.A.SAIRAM')
+st.write('email= sairamadithya2002@gmail.com')
+st.write('linkedin= https://www.linkedin.com/in/sairamadithya/')
 
 
