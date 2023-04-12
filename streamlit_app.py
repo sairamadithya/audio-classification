@@ -24,7 +24,7 @@ html_temp = """
   </div>
   """
 st.markdown(html_temp,unsafe_allow_html=True)
-st.subheader('this website can classify audio samples into 10 different categories:-')
+st.subheader('This website can classify audio samples into 10 different categories:-')
 st.write('1.air conditioner')
 st.write('2. car horn')
 st.write('3. children playing')
@@ -69,7 +69,6 @@ else:
             else:
                 out='street music'
             st.success('the given audio sample is predicted as:- '+str(out))
-st.success('DEVELOPED BY V.A.SAIRAM')
-st.success('email= sairamadithya2002@gmail.com')
-st.success('linkedin= https://www.linkedin.com/in/sairamadithya/')
+st.warning('DEVELOPED BY V.A.SAIRAM \n email= sairamadithya2002@gmail.com \n linkedin= https://www.linkedin.com/in/sairamadithya/')
+
 
